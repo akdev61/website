@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dev Kumaer Karmacharya">
+  <meta name="keywords" content="Dev Kumar Karmacharya">
+  <meta name="author" content="Dev Kumar Karmacharya">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Anish- Web Developer Portfolio">
+  <meta property="og:description" content="Professional web developer specializing in modern web technologies">
+  <meta property="og:type" content="website">
+  
+  <title>Anish - Web Developer Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="logo">Dev kumar</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+      </button>
+      <button class="mobile-menu" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <img src="images/anish.jpg" alt="Amine - Professional web developer and designer" class="profile-img">
+      </div>
+      <div class="hero-right">
+        <p class="intro">Hi I'm <span class="typing-container"><span id="typing-text"></span><span class="cursor"></span></span></p>
+        <h1 class="hero-name"></h1>
+        <p class="hero-description">
+          I'm a Computer Engineering Student.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn" download aria-label="Download CV">Download CV</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I'm a dedicated web developer with a passion for crafting elegant solutions to complex problems. My journey in web development began with a curiosity about how things work on the internet, and has evolved into a full-fledged career creating impactful digital experiences.</p>
+            <p>With expertise spanning front-end and back-end technologies, I specialize in building responsive, accessible, and performant web applications. I believe in writing clean, maintainable code and staying updated with the latest industry trends and best practices.</p>
+            <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I'm always excited to take on new challenges and collaborate on innovative projects.</p>
+          </div>
+          <div class="about-image">
+            <img src="images/anish.jpg" alt="Amine working on web development projects" class="about-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title">My Skills</h2>
+        <div class="skills-modern-grid">
+          <div class="skill-item-modern" data-skill="HTML">
+            <div class="skill-icon-modern">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span class="skill-name-modern">HTML</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="CSS">
+            <div class="skill-icon-modern">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <span class="skill-name-modern">CSS</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="JavaScript">
+            <div class="skill-icon-modern">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <span class="skill-name-modern">JavaScript</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="React">
+            <div class="skill-icon-modern">
+              <i class="fab fa-react"></i>
+            </div>
+            <span class="skill-name-modern">React</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Node.js">
+            <div class="skill-icon-modern">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <span class="skill-name-modern">Node.js</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Python">
+            <div class="skill-icon-modern">
+              <i class="fab fa-python"></i>
+            </div>
+            <span class="skill-name-modern">Python</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="PHP">
+            <div class="skill-icon-modern">
+              <i class="fab fa-php"></i>
+            </div>
+            <span class="skill-name-modern">PHP</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="MySQL">
+            <div class="skill-icon-modern">
+              <i class="fas fa-database"></i>
+            </div>
+            <span class="skill-name-modern">MySQL</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="MongoDB">
+            <div class="skill-icon-modern">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <span class="skill-name-modern">MongoDB</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Git">
+            <div class="skill-icon-modern">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <span class="skill-name-modern">Git</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="GitHub">
+            <div class="skill-icon-modern">
+              <i class="fab fa-github"></i>
+            </div>
+            <span class="skill-name-modern">GitHub</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Machine Learning">
+            <div class="skill-icon-modern">
+              <i class="fas fa-brain"></i>
+            </div>
+            <span class="skill-name-modern">Machine Learning</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="TensorFlow">
+            <div class="skill-icon-modern">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <span class="skill-name-modern">TensorFlow</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Data Science">
+            <div class="skill-icon-modern">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="skill-name-modern">Data Science</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="MATLAB">
+            <div class="skill-icon-modern">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <span class="skill-name-modern">MATLAB</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Problem Solving">
+            <div class="skill-icon-modern">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <span class="skill-name-modern">Problem Solving</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Team Work">
+            <div class="skill-icon-modern">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="skill-name-modern">Team Work</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Communication">
+            <div class="skill-icon-modern">
+              <i class="fas fa-comments"></i>
+            </div>
+            <span class="skill-name-modern">Communication</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Leadership">
+            <div class="skill-icon-modern">
+              <i class="fas fa-crown"></i>
+            </div>
+            <span class="skill-name-modern">Leadership</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Time Management">
+            <div class="skill-icon-modern">
+              <i class="fas fa-clock"></i>
+            </div>
+            <span class="skill-name-modern">Time Management</span>
+          </div>
+          
+          <div class="skill-item-modern" data-skill="Critical Thinking">
+            <div class="skill-icon-modern">
+              <i class="fas fa-search"></i>
+            </div>
+            <span class="skill-name-modern">Critical Thinking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <h2 id="portfolio-heading" class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/hrhub.jpg" alt="Automated Resume Screening System project screenshot" loading="lazy">
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Express</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Automated Resume Screening System</h3>
+              <p>This is a 6-month academic minor project developed as part of the Computer Engineering curriculum. The system automates the process of screening resumes based on job descriptions, making the hiring process faster and more efficient — especially helpful for HR teams within a company.</p>
+              <div class="project-buttons">
+                <a href="#" class="project-btn demo-btn" aria-label="View live demo of Automated Resume Screening System">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-btn source-btn" aria-label="View source code on GitHub">
+                  <i class="fab fa-github"></i>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/anishk.jpg" alt="Portfolio website project screenshot" loading="lazy">
+              <div class="tech-tags">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">D3.js</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">CSS3</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio website</h3>
+              <p>A personal portfolio showcasing my skills, projects, and experience as a web developer. Features modern design, smooth animations, and responsive layout.</p>
+              <div class="project-buttons">
+                <a href="#" class="project-btn demo-btn" aria-label="View live demo of Portfolio website">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-btn source-btn" aria-label="View source code on GitHub">
+                  <i class="fab fa-github"></i>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/dinventory.jpg" alt="Inventory Management using Blockchain project screenshot" loading="lazy">
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Socket.io</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Inventory Management using Blockchain</h3>
+              <p>This is a 12-month academic major project developed as part of the Computer Engineering curriculum. Decentralized inventory management system that tracks and secures stock using blockchain technology. Built with Python, Flask, MySQL, and smart contracts for transparent and tamper-proof records.</p>
+              <div class="project-buttons">
+                <a href="#" class="project-btn demo-btn" aria-label="View live demo of Inventory Management using Blockchain">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+                <a href="#" class="project-btn source-btn" aria-label="View source code on GitHub">
+                  <i class="fab fa-github"></i>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section-title">Contact Me</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>karmacharyaanish34@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>+91 9862411449</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Kathmandu, Nepal</p>
+            </div>
+            <div class="social-links-contact">
+              <a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Instagram profile"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="WhatsApp contact"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required aria-label="Your email address">
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required aria-label="Message subject">
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your Message" rows="6" required aria-label="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Dev kumar</h2>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp contact"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Dev kumar. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

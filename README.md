@@ -82,7 +82,7 @@ A modern, responsive portfolio website showcasing the work and skills of Dev Kum
    git clone https://github.com/akdev61/website.git
    ```
 
-2. Open `index (1).html` in your browser
+2. Open `index.html` in your browser
 
 That's it! No installation required.
 
